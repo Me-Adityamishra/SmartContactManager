@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Setting Page</title>
+<!-- Include jQuery library -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+
+<section>
+<!-- Add your script inside a <script> tag -->
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<div class="card">
+
+<div class="card-body">
+
+<h3 class="mb-3" >Change Password</h3>
+<form th:action="@{/user/change-password}" method="Post">
+
+     <!--  old password field-->
+     <div class="form-group">
+     
+     <input name="oldPassword" type="password" class="form-control" placeholder="enter old password"/>
+   
+     </div>
+     <!-- new password field -->
+      <div class="form-group">
+     <input name="newPassword" type="password" class="form-control" placeholder="enter new password"/>
+     
+     </div>
+     
+     <div class="class-container text-center">
+     <button type="submit"class="btn btn-success">Change</button>
+     <button type="reset" class="btn btn-warning">Reset</button>
+     
+     
+     </div>
+</form>
+
+</div>
+
+</div>
+</div>
+</div>
+</div>
+<script>
+    $(document).ready(function() {
+        $(".item").removeClass("active"); // Remove "active" class from elements with class "item"
+        $("#settings-link").addClass("active"); // Add "active" class to element with ID "settings-link"
+    });
+</script>
+
+</section>
+</body>
+</html>

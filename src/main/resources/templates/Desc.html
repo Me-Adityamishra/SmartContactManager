@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>About Smart Contact Manager</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .welcome-section {
+            background-color: #fff;
+            padding: 40px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .text-primary {
+            color: #f8d7da; /* Light red color */
+        }
+
+        .text-secondary {
+            color: #87ceeb; /* Sky blue color */
+        }
+
+        .container {
+            max-width: 80%;
+            margin: 0 auto;
+        }
+
+        h2 {
+            font-size: 2.5em;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <section class="welcome-section">
+        <div class="container">
+            <h2>Welcome to Smart Contact Manager</h2>
+            <p class="text-secondary">
+                We're excited to have you here! Smart Contact Manager is designed to streamline the way you manage and organize your contacts.
+            </p>
+            <p class="text-secondary">
+                With our platform, you can easily add, manage, and search through your contacts, ensuring you stay connected in the most efficient manner possible.
+            </p>
+            <p class="text-primary">
+                If you're visiting for the first time, please register to get started. Once registered, you can log in and start using all the features we offer.
+            </p>
+        </div>
+    </section>
+
+</body>
+</html>

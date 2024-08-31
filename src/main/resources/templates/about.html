@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="base::layout(~{::section})">
+<head>
+    <meta charset="ISO-8859-1">
+    <title>About Smart Contact Manager</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}"/> 
+</head>
+<body>
+
+<section class="full-screen about-section">
+    <div class="container">
+        <h1 class="section-title">About Smart Contact Manager</h1>
+        <p class="section-description">
+            The Smart Contact Manager is a web application designed to help users efficiently manage their contacts. 
+            It provides a smarter and more organized way to store, access, and manage contact information, making it easier 
+            to keep track of personal or professional relationships.
+        </p>
+
+        <h2 class="subsection-title">Key Features:</h2>
+        <ul class="features-list">
+            <li><strong>User Registration & Authentication:</strong> Secure user registration with encrypted passwords and role-based access.</li>
+            <li><strong>Role-Based Access Control:</strong> Admins have control over user management and other administrative tasks.</li>
+            <li><strong>Contact Management:</strong> Add, edit, delete, and view contacts with detailed information.</li>
+            <li><strong>Search Functionality:</strong> Quickly find contacts with a dynamic search feature.</li>
+            <li><strong>Responsive Design:</strong> Accessible on various devices including desktops, tablets, and smartphones.</li>
+            <li><strong>Secure Data Handling:</strong> Employs Spring Security with encryption and secure session management.</li>
+            <li><strong>User-Friendly Interface:</strong> Intuitive navigation with easy access to different sections like Home, About, Login, and Sign-Up.</li>
+            <li><strong>Scalability:</strong> Built with Spring Boot, scalable, and easy to deploy.</li>
+        </ul>
+
+        <h2 class="subsection-title">Use Cases:</h2>
+        <ul class="use-cases-list">
+            <li>Personal Use: For individuals managing personal contacts.</li>
+            <li>Business Use: For professionals keeping track of client or colleague information.</li>
+            <li>Organizational Use: For teams or small businesses needing a centralized contact management system.</li>
+        </ul>
+
+        <h2 class="subsection-title">Technical Stack:</h2>
+        <ul class="tech-stack-list">
+            <li><strong>Backend:</strong> Spring Boot, Hibernate, MySQL</li>
+            <li><strong>Frontend:</strong> Thymeleaf, HTML, CSS, JavaScript, Bootstrap</li>
+            <li><strong>Security:</strong> Spring Security with BCrypt encryption</li>
+            <li><strong>Deployment:</strong> Compatible with any server supporting Java applications</li>
+        </ul>
+
+        <p class="closing-note">
+            The Smart Contact Manager aims to simplify contact management while providing robust security and a user-friendly experience.
+        </p>
+    </div>
+</section>
+
+</body>
+</html>

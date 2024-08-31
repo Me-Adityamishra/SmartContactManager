@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" th:replace="normal/base::layout(~{::section})">
+<head>
+<meta charset="ISO-8859-1">
+<title>This is user_dashbprd Page</title>
+</head>
+<body>
+
+<section>
+<div class="container">
+  <div class="card">
+  <div class="card-body">
+  <div class="text-center">
+  <img class="my_profile_picture"
+	style="height: 200px; width: 200px;" alt="Profile Image"
+	th:src="@{'/image/contact-icon.png'}" title="Profile Picture" />
+  </div>
+  <h1 class="text-center mt-2 font-italic text-success"> Start Adding Your Contact</h1>
+  <a th:href="@{/user/add-contact}" class="btn btn-primary btn-block mt-3 text-uppercase font-weight-bold text-uppercase">Add New Contact</a>
+</div>
+
+</div>
+
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Include jQuery library -->
+
+<script>
+    $(document).ready(function() {
+        $(".item").removeClass("active"); // Remove "active" class from elements with class "item"
+        $("#home-link").addClass("active"); // Add "active" class to element with ID "setting-link"
+    });
+</script>
+
+</section>
+</body>
+</html>
